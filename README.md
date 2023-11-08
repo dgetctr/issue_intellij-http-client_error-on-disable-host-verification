@@ -1,5 +1,5 @@
 # issue_intellij-http-client_error-on-disable-host-verification
-A test repository for reproducing a runtime error in intellij's HTTP client when disabling the host verification.
+A test repository for reproducing a runtime error in intellij's HTTP client when disabling the host verification. (see [IDEA-337531](https://youtrack.jetbrains.com/issue/IDEA-337531/HTTP-Client-CLI-environment-parse-failure-with-SSLConfiguration))
 
 **Issue**
 _When adding the "SSLConfiguration" key (e.g. for adding "verifyHostCertificate") to the private env-file (as documented [here](https://www.jetbrains.com/help/idea/2023.2/http-client-in-product-code-editor.html#disable_certificate_verification)), the environment fails to load with an exception._

@@ -1,0 +1,12 @@
+# @name basic get on a public site with a self-signed certificate
+GET {{host}}
+
+> {%
+  client.test('response status expected to be 200', function() {
+    const actual = response.status;
+    const expected = 200;
+    client.assert(actual === expected, `expected: <${expected}>, was: <${actual}>`);
+  });
+%}
+
+###
